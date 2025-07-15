@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Tech_Club_Frontend/static/css/main.e6c13ad2.css",
+    "main.js": "/Tech_Club_Frontend/static/js/main.00a05cb0.js",
+    "static/js/453.e9ffa49b.chunk.js": "/Tech_Club_Frontend/static/js/453.e9ffa49b.chunk.js",
+    "index.html": "/Tech_Club_Frontend/index.html",
+    "main.e6c13ad2.css.map": "/Tech_Club_Frontend/static/css/main.e6c13ad2.css.map",
+    "main.00a05cb0.js.map": "/Tech_Club_Frontend/static/js/main.00a05cb0.js.map",
+    "453.e9ffa49b.chunk.js.map": "/Tech_Club_Frontend/static/js/453.e9ffa49b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.00a05cb0.js"
+  ]
+}
