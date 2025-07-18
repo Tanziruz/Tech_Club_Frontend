@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Tech_Club_Frontend/static/css/main.e6c13ad2.css",
-    "main.js": "/Tech_Club_Frontend/static/js/main.7282b912.js",
+    "main.css": "/Tech_Club_Frontend/static/css/main.7db3d962.css",
+    "main.js": "/Tech_Club_Frontend/static/js/main.1ecb9b80.js",
     "static/js/453.e9ffa49b.chunk.js": "/Tech_Club_Frontend/static/js/453.e9ffa49b.chunk.js",
     "index.html": "/Tech_Club_Frontend/index.html",
-    "main.e6c13ad2.css.map": "/Tech_Club_Frontend/static/css/main.e6c13ad2.css.map",
-    "main.7282b912.js.map": "/Tech_Club_Frontend/static/js/main.7282b912.js.map",
+    "main.7db3d962.css.map": "/Tech_Club_Frontend/static/css/main.7db3d962.css.map",
+    "main.1ecb9b80.js.map": "/Tech_Club_Frontend/static/js/main.1ecb9b80.js.map",
     "453.e9ffa49b.chunk.js.map": "/Tech_Club_Frontend/static/js/453.e9ffa49b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.7282b912.js"
+    "static/css/main.7db3d962.css",
+    "static/js/main.1ecb9b80.js"
   ]
 }
