@@ -1,4 +1,3 @@
-// FileName: /OurJourney.js
 import React from 'react';
 
 const milestones = [
@@ -10,7 +9,7 @@ const milestones = [
   },
   {
     year: '2021',
-    title: 'First Inter-School Hackathon & Website Launch',
+    title: 'Logique',
     description: 'We hosted our first inter-school hackathon, attracting participants from various schools and showcasing incredible talent. This year also marked the launch of our official club website, serving as a hub for resources and event registrations.',
     image: 'https://ik.imagekit.io/o8zmk0phf/Logo.png?updatedAt=1752756443095', // Placeholder image for 2021
   },
@@ -40,25 +39,27 @@ const milestones = [
   },
 ];
 
+
 const OurJourney = () => (
   <div className="min-h-screen bg-gray-950 text-white flex flex-col items-center pt-20 pb-12 px-4 sm:px-6 lg:px-8">
-          <div className="relative flex flex-col items-center w-full max-w-6xl py-8">
-            {/* Main "Meet Our Team" heading */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-8 text-center">
-              <span className="text-yellow-300">Our Journey</span>
-            </h1>
-          </div>
+    <div className="relative flex flex-col items-center w-full max-w-6xl py-8">
+      {/* Main "Our Journey" heading */}
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-8 text-center animate-slide-in-right">
+        <span className="text-yellow-300">Our Journey</span>
+      </h1>
+    </div>
 
     <div className="relative w-full max-w-4xl">
       {/* Vertical line for the timeline */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-bright-sun to-supernova h-full rounded-full hidden md:block"></div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-bright-sun to-supernova h-full rounded-full hidden md:block animate-fade-in"></div>
 
       {milestones.map((milestone, index) => (
         <div
           key={index}
           className={`mb-12 flex flex-col md:flex-row items-center w-full ${
-            index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'
+            index % 2 === 0 ? 'md:justify-start animate-slide-in-left' : 'md:justify-end animate-slide-in-right'
           }`}
+          style={{ animationDelay: '0s' }} // Set all animations to start at the same time
         >
           {/* Milestone Card */}
           <div
@@ -90,18 +91,22 @@ const OurJourney = () => (
           </div>
 
           {/* Circle on the timeline line (desktop only) */}
-          <div className="hidden md:block absolute w-6 h-6 rounded-full bg-supernova border-2 border-white z-10"
-            style={{
-              left: '50%',
-              transform: 'translateX(-50%)',
-              top: `calc(${index * (12 + 12)}% + 50px)` // Adjust this value based on card height and margin
-            }}
-          ></div>
+          {index < milestones.length - 1 && (
+            <div
+              className="hidden md:block absolute w-6 h-6 rounded-full bg-supernova border-2 border-white z-10 animate-fade-in"
+              style={{
+                left: '50%',
+                transform: 'translateX(-50%)',
+                top: `calc(${index * (12 + 12)}% + 50px)`,
+                animationDelay: '0s',
+              }}
+            ></div>
+          )}
         </div>
       ))}
     </div>
 
-    <div className="mt-16 text-center">
+    <div className="mt-16 text-center animate-fade-in">
       <p className="text-gray-300 text-lg sm:text-xl mb-4">
         And the journey continues...
       </p>

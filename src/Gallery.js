@@ -1,4 +1,3 @@
-// FileName: /Gallery.js
 import React from 'react';
 
 const galleryImages = [
@@ -30,16 +29,13 @@ const galleryImages = [
 
 const Gallery = () => (
   <div className="min-h-screen bg-gray-950 text-white flex flex-col items-center pt-20 pb-12 px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-12 sm:mb-16">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-bright-sun mb-4 tracking-wide">
-        Gallery
+    <div className="text-center mb-12 sm:mb-16 mt-12 sm:mt-18">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-8 text-center animate-slide-in-left">
+        <span className="text-yellow-300">Gallery</span>
       </h1>
-      <p className="text-gray-300 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-        Explore the highlights and moments captured from our events and activities.
-      </p>
     </div>
 
-    <div className="relative w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+    <div className="relative w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 fade-in">
       {galleryImages.map((image, index) => (
         <div
           key={index}
