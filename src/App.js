@@ -467,13 +467,15 @@ if (isLoading) {
                         decisions you make in school. Come find us during lunch break in the computer lab, or just show up to our
                         next meeting. No experience required - just bring your curiosity and enthusiasm!
                       </p>
-                      <button
-            onClick={() => window.location.pathname = '/contact'}
-            className="group relative px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-lightning-yellow to-supernova text-gray-900 font-bold text-lg sm:text-xl rounded-full shadow-2xl hover:shadow-lightning-yellow/25 transform hover:scale-105 transition-all duration-300 overflow-hidden"
-                      >
-                        <span className="relative z-10 text-xl sm:text-2xl">Get Involved Today!</span>
-                        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                      </button>
+<Link
+  to="/contact"
+  onClick={() => setActiveSection('get-in-touch')}
+  className="group relative px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-lightning-yellow to-supernova text-gray-900 font-bold text-lg sm:text-xl rounded-full shadow-2xl hover:shadow-lightning-yellow/25 transform hover:scale-105 transition-all duration-300 overflow-hidden text-center inline-block"
+>
+  <span className="relative z-10 text-xl sm:text-2xl">Get Involved Today!</span>
+  <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+</Link>
+
                     </div>
                   </div>
                 </div>
