@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const milestones = [
   {
@@ -110,13 +112,14 @@ const OurJourney = () => (
       <p className="text-gray-300 text-lg sm:text-xl mb-4">
         And the journey continues...
       </p>
-      <button
-        className="group relative px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-lightning-yellow to-supernova text-gray-900 font-bold text-base sm:text-lg rounded-full shadow-2xl hover:shadow-lightning-yellow/25 transform hover:scale-105 transition-all duration-300 overflow-hidden"
-        onClick={() => window.location.href = '/contact'} // Example: navigate to contact page
+      <Link
+        to="/contact"
+        className="group relative px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-lightning-yellow to-supernova text-gray-900 font-bold text-base sm:text-lg rounded-full shadow-2xl hover:shadow-lightning-yellow/25 transform hover:scale-105 transition-all duration-300 overflow-hidden text-center inline-block"
       >
         <span className="relative z-10">Join Our Future</span>
         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-      </button>
+      </Link>
+
     </div>
   </div>
 );

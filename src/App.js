@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 
@@ -295,7 +296,7 @@ if (isLoading) {
                   <span className="block animate-slide-up">
                     <span className="bg-gradient-to-r from-bright-sun via-lightning-yellow to-supernova bg-clip-text text-transparent">
                       INNOVATE
-                    </span>
+                    </span> 
                   </span>
                   <span className="block animate-slide-up animation-delay-300">
                     <span className="text-white">CREATE</span>
@@ -320,12 +321,14 @@ if (isLoading) {
                     <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                   </button>
 
-                  <button
-                    onClick={() => window.location.href = '/contact'}
-                    className="group px-6 py-3 sm:px-8 sm:py-4 border-2 border-lightning-yellow text-lightning-yellow font-bold text-base sm:text-lg rounded-full hover:bg-lightning-yellow hover:text-gray-900 transform hover:scale-105 transition-all duration-300 backdrop-blur-sm w-full sm:w-auto"
-                  >
-                    Join Community
-                  </button>
+                <Link
+                  to="/contact"
+                  onClick={() => setActiveSection('get-in-touch')}
+                  className="group px-6 py-3 sm:px-8 sm:py-4 border-2 border-lightning-yellow text-lightning-yellow font-bold text-base sm:text-lg rounded-full hover:bg-lightning-yellow hover:text-gray-900 transform hover:scale-105 transition-all duration-300 backdrop-blur-sm w-full sm:w-auto text-center"
+                >
+                  Join Community
+                </Link>
+
                 </div>
               </div>
 
