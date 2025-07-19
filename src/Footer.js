@@ -52,23 +52,28 @@ const App = () => {
             </div>
 
             {/* Social Media Box */}
-            <div className="bg-gray-800 p-8 rounded-xl border border-gray-700">
-              <h2 className="text-xl font-bold text-yellow-300 mb-4">Follow Us</h2>
-              <div className="flex space-x-4">
-                {['Discord', 'Medium', 'Youtube', 'Github'].map((platform) => (
-                  <a 
-                    key={platform}
-                    href="https://discord.gg/tEEexZX2aq"
-                    href="https://medium.com/@techclubdpsrpk"
-                    href="https://www.youtube.com/@TechClubDPSRPK"
-                    href="https://github.com/thearghyasarkar/"
-                    className="text-gray-300 hover:text-yellow-300 transition-colors"
-                  >
-                    {platform}
-                  </a>
-                ))}
-              </div>
-            </div>
+<div className="bg-gray-800 p-8 rounded-xl border border-gray-700">
+  <h2 className="text-xl font-bold text-yellow-300 mb-4">Follow Us</h2>
+  <div className="flex space-x-4">
+    {[
+      { name: 'Discord', url: 'https://discord.gg/tEEexZX2aq' },
+      { name: 'Medium', url: 'https://medium.com/@techclubdpsrpk' },
+      { name: 'Youtube', url: 'https://www.youtube.com/@TechClubDPSRPK' },
+      { name: 'Github', url: 'https://github.com/thearghyasarkar/' }
+    ].map((platform) => (
+      <a
+        key={platform.name}
+        href={platform.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-300 hover:text-yellow-300 transition-colors"
+      >
+        {platform.name}
+      </a>
+    ))}
+  </div>
+</div>
+
 
             {/* Quick Links Box */}
             <div className="bg-gray-800 p-8 rounded-xl border border-gray-700">
